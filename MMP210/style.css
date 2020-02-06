@@ -6,16 +6,6 @@ H2 { text-align: center }
         font-family: "Arial Black", Helvetica, sans-serif;
         font-size: 1.2em;
         color:black;
-div.container4 {
-    height: 10em;
-    position: relative }
-div.container4 p {
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }        
+      
 }
 
