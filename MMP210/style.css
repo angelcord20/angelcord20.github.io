@@ -2,15 +2,18 @@ P { text-align: center }
 H2 { text-align: center }
 
 body{
-		background-size: 100%
-		width: 100px
-		height: 100px;
-		border-radius: 50%;
         background-color: gray;
         font-family: "Arial Black", Helvetica, sans-serif;
         font-size: 1.2em;
         color:black;
         }
+#example-div {
+background-size: 100%;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+        
 .parent -div {
 	display: flex;
 	justify-content: center;
