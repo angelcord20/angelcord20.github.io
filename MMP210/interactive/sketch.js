@@ -1,5 +1,4 @@
-<!doctype html>
-
+// This code is for the interactive self portrait.
 function setup(){
   createCanvas(400, 400);
   noStroke();
