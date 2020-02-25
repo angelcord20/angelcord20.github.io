@@ -1,87 +1,70 @@
-var redMouse;
-var blueMouse
-
-function setup() {
-    createCanvas(400, 400);
-  fill(240);
+function setup(){
+  createCanvas(400, 400);
   noStroke();
 }
+function draw(){
+  background(0);
+  var r = 0; // red;
+  var g = mouseX; // green
+  var b = mouseY; // blue
+  fill(r, g, b);
 
+// other definitions
+  var s = 200;
+  var o = 50;// offset
 
-let snowflakes = []; // array to hold snowflake objects
+  var x = width / 2;
+  var y = height / 2;
+  var s = width / 2;
+  ellipse(x, y, s);
 
+fill (60)
+ellipse (160, 200, 50, 50)
 
+fill (60)
+ellipse (240, 200, 50, 50)
 
-function draw() {
-    console.log(mouseX);
-        background(redMouse, 0, blueMouse);
-        fill(0,100,0);
-    //++ will increase the value of i by 1 each loop
-    for(var i= 0; i < 10; i++){
-//        console.log(i);
-    }
-//    function setup() {
-//    //figures
-//    createCanvas(200, 200);
-//    background(0)
-//    noStroke();
-//    fill(0)
-    push();
+fill(255, 255, 0)
+ellipse (200, 200, 100, 100)
+
+// how much it moves to the side
+// how much puntiago it will be
+// how thick it'll be
+// how much of the corner will be up
+// how much wide it will become
+// 
+fill(60)
+push();
     translate(0,100);
-    triangle(width/2, 18, 18, 360, width-18, 360);  
-    pop();
-//    }
-    ellipse(width/2,height/2,200,200);
-    triangle(18, 18, width-18, 18, width/2, 360);
-    fill(255);
-    ellipse(mouseX,mouseY,100,100);
-    var redMouse = map(mouseX, 0, 400, 0, 255);
-    var blueMouse = map(mouseY, 0, 400, 0, 255);
-    // console.log(redmouse);
+    triangle(width/2, 6, 6, 80, width-6, 80);
 
-  let t = frameCount /30; // update time
 
-  // create a random number of snowflakes each frame
-  for (let i = 0; i < random(5); i++) {
-    snowflakes.push(new snowflake()); // append snowflake object
-  }
+ fill(0, 0, 0)
+ arc(170, 100, 30, 30, PI, TWO_PI);
 
-  // loop through snowflakes with a for..of loop
-  for (let flake of snowflakes) {
-    flake.update(t); // update snowflake position
-    flake.display(); // draw snowflake
-  }
-}
+fill(0, 0, 0)
+ arc(220, 100, 30, 30, PI, TWO_PI);
 
-// snowflake class
-function snowflake() {
-  // initialize coordinates
-  this.posX = 0;
-  this.posY = random(-50, 0);
-  this.initialangle = random(0, 2 * PI);
-  this.size = random(2, 5);
+ fill(0, 0, 0)
+ arc(210, 130, 30, 30, 0, PI)
 
-  // radius of snowflake spiral
-  // chosen so the snowflakes are uniformly spread out in area
-  this.radius = sqrt(random(pow(width / 2, 2)));
+ fill(255, 255, 0)
+ ellipse(220, 99, 15, 15)
 
-  this.update = function(time) {
-    // x position follows a circle
-    let w = 0.6; // angular speed
-    let angle = w * time + this.initialangle;
-    this.posX = width / 2 + this.radius * sin(angle);
+ fill(255, 255, 0)
+ ellipse(170, 99, 15, 15)
 
-    // different size snowflakes fall at slightly different y speeds
-    this.posY += pow(this.size, 0.5);
+var mouthSize = map(mouseX, 0, width, 5, 200);
+  x
+mouthSize = max(0, mouthSize); // prevents negative value error
 
-    // delete snowflake if past end of screen
-    if (this.posY > height) {
-      let index = snowflakes.indexOf(this);
-      snowflakes.splice(index, 1);
-    }
-  };
+fill(255, 102, 153)
+ arc(210, 81 + o, 26, 26, mouthSize, PI); // mouth
 
-  this.display = function() {
-    ellipse(this.posX, this.posY, this.size);
-  };    
+fill(0, 0, 0)
+ rect(214, 140, 3, 40)
+
+ fill(255, 0, 0)
+ ellipse(215, 140, 10, 10) 
+ //triangle(18, 18, width-18, 18, width/2, 360);
 }
