@@ -43,7 +43,7 @@ function mousePressed() {
 
   if (mouseX > width/2 && mouseY > height/2) {
     // bottom right
-    instructions = 'click here to look how people who used to say this looked like last year';
+    instructions = 'click here to look how people who used to say this all the time looked like last year';
     y = 50;
   }
 }
