@@ -1,0 +1,46 @@
+/*P { text-align: center }
+H2 { text-align: center }
+CreateCanvas(400, 400)*/
+
+body{
+    background-color: white;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color:black; 
+    text-align: center;
+    padding: 0; 
+    margin: 0;
+  }
+
+.main {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.bread {
+	width: 100%;
+	max-width: 300px;
+}
+
+/*#example-div {
+background-size: 100%;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+ 
+div {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.parent -div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
