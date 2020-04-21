@@ -1,0 +1,24 @@
+/*P { text-align: center }
+H2 { text-align: center }
+CreateCanvas(400, 400)*/
+
+body{
+    background-color: white;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color:black; 
+    text-align: center;
+    padding: 0; 
+    margin: 0;
+  }
+
+.main {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.bread {
+	width: 100%;
+	max-width: 300px;
+}
