@@ -28,12 +28,12 @@ function draw() {
 
     if (musicv1.isPlaying()) {
         fill('white');
-        vibecheckGif.position(325, 250);
+        vibecheckGif.position(535, 250);
     }
 
     if(music.isPlaying()) {
         fill('blue')
-        smokeGif.position(240,150);
+        smokeGif.position(435,150);
 
 
     }
@@ -52,7 +52,7 @@ function keyPressed(){
             smokeGif.position(1000, 1000);
         } else {
                 music.play();
-                smokeGif.position(235, 500);
+                smokeGif.position(435, 150);
     }
 }
 
@@ -62,6 +62,6 @@ if (musicv1.isPlaying());
     vibecheckGif.position(1000, 1000)
 } else {
     musicv1.play();
-    vibecheckGif.position(325, 250);
+    vibecheckGif.position(535, 250);
     }
 }
