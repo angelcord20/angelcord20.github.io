@@ -25,6 +25,11 @@ function preload() {
     saria = loadImage('sarias.png');
     sol = loadImage('sol.png');
     epona = loadImage('epona.png');
+    abajo = loadImage('Abajo.png');
+    arriba = loadImage('arriba.png');
+    izquierda = loadImage('izquierda.png');
+    derecha = loadImage('Derecha.png');
+    As = loadImage('As.png');
     
 }
 function setup() {
@@ -41,6 +46,7 @@ function draw() {
     image(img, 140, 80);
     image(saria, 450, 110, 200, 100);
     image(tormenta, 450, 220, 200, 100);
+
 
     textSize(25);
     text('The ocarina of time', 10, 20, width - 40);
@@ -64,6 +70,11 @@ function draw() {
     button(AnoteSound, 248, 220, 30);
     button(BnoteSound, 275, 260, 30);
     button(D2noteSound, 305, 140, 30);
+    image(As, 290, 125, 30, 30);
+    image(arriba, 230, 203, 35, 35);
+    image(izquierda, 207, 253, 35, 35);
+    image(derecha, 277, 188, 35, 35);
+    image(abajo, 256, 243, 35, 35);
     fill('white');
     
 }
@@ -103,4 +114,5 @@ function button(sound, x, y, s) {
     ellipse(x, y, s); 
     
 }
+
 
