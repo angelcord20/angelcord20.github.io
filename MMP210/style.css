@@ -9,15 +9,11 @@ body{
 }
 
 .main {
-	width: 100%;
+	
 	display: block;
 	text-align: center;
 }
 
-.bread {
-	width: 100%;
-	max-width: 300px;
-}
 
 /*#example-div {
 background-size: 100%;
