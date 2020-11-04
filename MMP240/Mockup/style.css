@@ -1,0 +1,129 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#wrapper{
+	max-width:1200px;
+	margin:0 auto;
+}
+
+header{
+	 background: 
+	 linear-gradient(90deg, rgba(0,0,0,0.68) 0, rgba(0,0,0,0.68) 300px, rgba(0,0,0,0.68) 600px),
+	 url(DeathNote.jpg) center no-repeat,
+	 black;
+	 padding:3em;
+}
+
+p{
+	margin-bottom:1em;
+}
+
+.lead{
+	color:#fff;
+	width:300px;
+}
+
+
+h1 img{
+	max-width:100%;
+}
+
+header button{
+	background-color:#FFFDFD;
+	background-image: url("playbutton.gif");
+	background-position: 10px;
+	border:none;
+	color:#000;
+	padding:8px;
+	padding-left:25px;
+	border-radius:5px;
+	text-transform:uppercase;
+	background-repeat:no-repeat;
+}
+
+nav{
+	background-color:#e30000;
+	padding:10px;
+	margin-bottom:2em;
+}
+
+main{
+	background-color:#000000;
+	color:#fff;
+	
+
+
+}
+
+nav li{
+	display:inline;
+	border-right:solid 1px #fff;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+nav li:last-child{
+	bordero:none;
+}
+
+nav a{
+	color:white;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:#e30000;
+}
+
+.col{
+	width:48%;
+}
+
+.col-left{
+	float:left;
+}
+
+.col-right{
+	float:right;
+}
+
+footer{
+	clear:both;
+}
+
+h2{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom:0.5em;
+}
+
+h3{
+	font-weight:bold;
+}
+
+.98%-match{
+	border:solid 1px #000;
+	padding: 0 3px;
+	font-size:smaller;
+}
+
+main{
+	margin-bottom:3em;
+	overflow:auto;
+}
+
+.episode-card{
+	width:48%;
+}
+
+.episodes{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.responsive-img{
+	width:100%;
+
