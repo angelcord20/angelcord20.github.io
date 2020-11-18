@@ -2,10 +2,10 @@ var num = 0;
 
 //Replace with your own values and add additional lines for more images
 imgArray = [
-		['slides1.jpg'],
-		['slides2.jpg'],
-		['slides3.jpg'],
-		['slides4.jpg'],
+		['Slides1.jpg'],
+		['Slides2.jpg'],
+		['Slides3.jpg'],
+		['Slides4.jpg'],
 
 ]
 
