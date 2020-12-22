@@ -1,0 +1,15 @@
+P { text-align: center }
+H2 { text-align: center }
+
+body{
+    background-color: gray;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color:black;
+}
+
+.main {
+	
+	display: block;
+	text-align: center;
+}
